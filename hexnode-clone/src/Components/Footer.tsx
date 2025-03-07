@@ -6,7 +6,7 @@ const Footer = () => {
         <button className="btn btn-danger mt-2">TRY HEXNODE FOR FREE</button>
       </div>
 
-      <div className="container mt-3 d-flex justify-between">
+      <div className="container mt-3 d-flex justify-content-between">
         <div>
         <a href="#" className="text-muted small text-decoration-none">
            Terms of Use .privacy.Cookies

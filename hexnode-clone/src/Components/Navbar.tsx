@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-danger ms-3" href="#">
-          START FREE TRIAL
+         14 START FREE TRIAL
         </a>
       </div>
     </nav>
