@@ -1,0 +1,82 @@
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
+.testimonial-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonial-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-content {
+  display: flex;
+  max-width: 600px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.customer-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimonial-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.testimonial-text p {
+  font-size: 1.1rem;
+}
+
+.testimonial-text h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.testimonial-text span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000 !important;
+}
+
+
+.brand-runner {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  padding: 10px 0;
+}
+
+.brand-track {
+  display: flex;
+  width: 200%;
+  animation: marquee 15s linear infinite;
+}
+
+.brand-logo {
+  height: 40px;
+  margin: 0 20px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

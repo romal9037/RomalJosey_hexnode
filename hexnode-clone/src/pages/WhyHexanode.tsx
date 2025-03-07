@@ -3,7 +3,7 @@ import { FaShieldAlt, FaCogs, FaUsers, FaNetworkWired } from "react-icons/fa";
 
 const WhyHexanode = () => {
   return (
-    <section className="container text-center py-5" id="Why">
+    <section className="container text-center py-5 " id="Why">
       <h2 className="fw-bold mb-4">Why Hexnode?</h2>
 
       <div className="row align-items-center justify-content-center">
@@ -37,7 +37,7 @@ const WhyHexanode = () => {
        
         <div className="col-md-2 d-flex justify-content-center my-4">
           <div className="rounded-circle bg-dark d-flex justify-content-center align-items-center" style={{ width: "80px", height: "80px" }}>
-            <img src="/path-to-hexnode-icon.png" alt="Hexnode" style={{ width: "50%" }} />
+            <img src="https://static.hexnode.com/v2/assets/img/ads-pages/hexnode-app-icon.svg" alt="Hexnode" style={{ width: "50%" }} />
           </div>
         </div>
 

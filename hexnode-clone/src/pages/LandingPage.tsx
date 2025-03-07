@@ -1,5 +1,4 @@
 
-
 const LandingPage = () => {
   return (
     <div className="container-fluid bg-dark text-white py-5">
@@ -26,15 +25,15 @@ const LandingPage = () => {
 
           <div className="col-md-6 position-relative">
             <img
-              src="/path-to-your-image.png"
+              src="https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fbanner%2Fbanner.jpg&w=640&q=90"
               alt="User working"
               className="img-fluid rounded"
             />
 
-            <span className="badge bg-warning position-absolute" style={{ top: "10%", left: "70%" }}>
+            <span className="badge bg-warning position-absolute" style={{ top: "10%", left: "20%" }}>
                Password policy applied
             </span>
-            <span className="badge bg-primary position-absolute" style={{ top: "40%", left: "80%" }}>
+            <span className="badge bg-primary position-absolute" style={{ top: "40%", left: "90%" }}>
                TvOS Kiosk Active
             </span>
             <span className="badge bg-success position-absolute" style={{ top: "70%", left: "60%" }}>

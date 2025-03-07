@@ -5,32 +5,32 @@ type PlatformKey = "Android" | "iOS" | "macOS" | "Windows" | "tvOS" | "FireOS";
 
 const platforms: Record<PlatformKey, { img: string; description: string }> = {
   Android: {
-    img: "/images/android.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2Fandroid.jpg&w=640&q=90",
     description:
       "Remotely deploy, manage, monitor, and secure Android devices in your organization. Set compliance benchmarks and leverage Android Enterprise to its full capabilities.",
   },
   iOS: {
-    img: "/images/ios.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2FiOS.jpg&w=640&q=90",
     description:
       "Manage iPhones and iPads seamlessly with Hexnode's iOS device management solutions.",
   },
   macOS: {
-    img: "/images/macos.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2FmacOS.jpg&w=640&q=90",
     description:
       "Secure and configure Mac devices while ensuring compliance with enterprise policies.",
   },
   Windows: {
-    img: "/images/windows.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2Fwindows.jpg&w=640&q=90",
     description:
       "Deploy Windows policies, enforce security settings, and ensure smooth enterprise operations.",
   },
   tvOS: {
-    img: "/images/tvos.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2FtvOS.jpg&w=640&q=90",
     description:
       "Manage Apple TVs with Hexnode's comprehensive tvOS management solutions.",
   },
   FireOS: {
-    img: "/images/fireos.png",
+    img: "https://www.hexnode.com/_next/image/?url=https%3A%2F%2Fstatic.hexnode.com%2Fv2%2Fassets%2Fimg%2Fads-pages%2Fmulti-platforms%2FfireOS.jpg&w=640&q=90",
     description:
       "Control and secure Amazon FireOS devices with powerful Hexnode policies.",
   },

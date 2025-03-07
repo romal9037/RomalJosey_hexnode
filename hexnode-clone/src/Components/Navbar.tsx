@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Navbar = () => {
   const [navbarBg, setNavbarBg] = useState("bg-dark navbar-dark");
   const [textColor, setTextColor] = useState("text-white fw-normal");
