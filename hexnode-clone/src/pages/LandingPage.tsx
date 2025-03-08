@@ -31,14 +31,49 @@ const LandingPage = () => {
                                     alt="User working"
                                     className="img-fluid rounded" />
 
-                                <span className="badge bg-warning position-absolute" style={{ top: "10%", left: "20%" }}>
+                                <span
+                                    className="badge  position-absolute badge-hover rounded-pill d-flex align-items-center"
+                                    style={{ top: "10%", left: "20%", width: '200px', padding: '8px 12px', backgroundColor: '#fcd598' }}
+                                >
+                                    <span
+                                        className="tick-circle1 d-flex justify-content-center align-items-center me-2"
+                                        style={{
+                                            width: '20px',
+                                            height: '20px',
+                                            borderRadius: '50%',
+                                            transition: 'background-color 0.5s ease, color 0.5s ease'
+                                        }}
+                                    >
+                                        <i className="fas fa-check"></i>
+                                    </span>
                                     Password policy applied
                                 </span>
-                                <span className="badge bg-primary position-absolute" style={{ top: "40%", left: "90%" }}>
-                                    TvOS Kiosk Active
+
+                                <span className="badge  position-absolute badge-hover rounded-pill d-flex align-items-center" style={{ top: "40%", left: "80%", padding: '8px 12px', backgroundColor: '#c3e1e7' }}>
+                                    <span
+                                        className="tick-circle2 d-flex justify-content-center align-items-center me-2"
+                                        style={{
+                                            width: '20px',
+                                            height: '20px',
+                                            borderRadius: '50%',
+                                            transition: 'background-color 0.5s ease, color 0.5s ease'
+                                        }}
+                                    >
+                                        <i className="fas fa-check"></i>
+                                    </span>   TvOS Kiosk Active
                                 </span>
-                                <span className="badge bg-success position-absolute" style={{ top: "70%", left: "60%" }}>
-                                    Device Enrolled
+                                <span className="badge  position-absolute badge-hover rounded-pill d-flex align-items-center" style={{ top: "70%", left: "60%", padding: '8px 12px', backgroundColor: '#bcdcbe' }}>
+                                    <span
+                                        className="tick-circle3 d-flex justify-content-center align-items-center me-2"
+                                        style={{
+                                            width: '20px',
+                                            height: '20px',
+                                            borderRadius: '50%',
+                                            transition: 'background-color 0.5s ease, color 0.5s ease'
+                                        }}
+                                    >
+                                        <i className="fas fa-check"></i>
+                                    </span>   Device Enrolled
                                 </span>
                             </div>
                         </div>
@@ -46,20 +81,25 @@ const LandingPage = () => {
 
 
                 </div>
-                <div className="container-fluid text-center ps-3 pe-3 pt-3 " style={{backgroundColor:"#171A26"}}>
-                    <div className="row d-flex  justify-content-around">
-                        
-                        <div className="col-md-2 text-white text-start">
-                            <h6 className="fw-bold"> IDC</h6>
-                            <p>Hexnode is listed as a leader and major player in IDC MarketScape 2024.</p>
-                        </div>
-                        <div className="col-md-2 text-white text-start">
-                            <h6 className="fw-bold"> Gartner</h6>
-                            <p>Hexnode was recognized in the 2023 Gartner Market Guide for UEM.</p>
-                        </div>
-                        <div className="col-md-2 text-white text-start">
-                            <h6 className="fw-bold"> Forrester</h6>
-                            <p>Forrester includes Hexnode as a Notable vendor in UEM Landscape 2023.</p>
+                <div className="container-fluid text-center ps-3 pe-3 pt-3 " style={{ backgroundColor: "#171A26" }}>
+                    <div className="container">
+                        <div className="row d-flex  justify-content-between ">
+
+                            <div className="col-md-3 text-white text-start hover-card ">
+                                <h6 className="fw-bold"> IDC</h6>
+                                <p>Hexnode is listed as a leader and major player in IDC MarketScape 2024.</p>
+                            </div>
+                            <div className="col-md-1 border-start border-light mb-2"></div>
+                            <div className="col-md-3 text-white text-start hover-card  ">
+                                <h6 className="fw-bold"> Gartner</h6>
+                                <p>Hexnode was recognized in the 2023 Gartner Market Guide for UEM.</p>
+                            </div>
+                            <div className="col-md-1 border-end border-light mb-2"></div>
+                            <div className="col-md-3 text-white text-start hover-card ">
+                                <h6 className="fw-bold"> Forrester</h6>
+                                <p>Forrester includes Hexnode as a Notable vendor in UEM Landscape 2023.</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>

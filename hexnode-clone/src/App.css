@@ -80,3 +80,237 @@
     transform: translateX(-50%);
   }
 }
+
+.hover-card {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.hover-card:hover {
+  transform: translateY(-5px); 
+  cursor: pointer; 
+}
+
+.card-hover {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px); 
+}
+
+.card-content {
+  position: absolute;
+  bottom: -35px; 
+  left: 2;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95); 
+  color: #dd0735;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: start;
+  padding: 8px 0;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.card-hover:hover .card-content {
+  bottom: 0; 
+}
+
+.badge-hover {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: #000;
+}
+
+.badge-hover:hover {
+  background-color: #fff !important; 
+  color: #000 !important;           
+}
+
+.tick-circle1 {
+  background-color: #fff; 
+  color: #fcd598;
+}
+.tick-circle2 {
+  background-color: #fff; 
+  color: #c3e1e7;
+}
+
+.tick-circle3 {
+  background-color: #fff; 
+  color: #bcdcbe;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.connector-line {
+  position: absolute;
+  width: 103px;
+  height: 179px;
+  border-radius: 15px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #000 50%,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+  animation: run-dash 1.5s linear infinite;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  position: absolute;
+  border: none; 
+  background-image: linear-gradient(
+    to right,
+    #000 50%,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+  animation: run-dash 1.5s linear infinite;
+}
+
+.top-left {
+  position: absolute;
+  top: 25%;
+  left: 39%;
+  width: 100px;
+  height: 153px;
+
+  background: 
+    linear-gradient(to right, #000 50%, transparent 50%) top repeat-x, /* Top Line */
+    linear-gradient(to bottom, #000 50%, transparent 50%) right repeat-y; /* Right Line */
+
+  background-size: 10px 2px, 2px 10px;
+  animation: 
+    topMove 1.5s linear infinite, 
+    rightMove 1.5s linear infinite;
+}
+
+.top-right {
+  position: absolute;
+  top: 25%;
+  right: 39%;
+  width: 100px;
+  height: 153px;
+  background: 
+    linear-gradient(to right, #000 50%, transparent 50%) top repeat-x,
+    linear-gradient(to bottom, #000 50%, transparent 50%) left repeat-y;
+  background-size: 10px 2px, 2px 10px;
+  animation:
+    run-dash-top2 1.5s linear infinite,
+    run-dash-left2 1.5s linear infinite;
+}
+
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 14%;
+  left: 39%;
+  width: 100px;
+  height: 153px;
+  background: 
+    linear-gradient(to left, #000 50%, transparent 50%) bottom repeat-x, 
+    linear-gradient(to top, #000 50%, transparent 50%) right repeat-y; 
+  background-size: 10px 2px, 2px 10px;
+  animation: 
+    bottom1 1.5s linear infinite,  
+    right1 1.5s linear infinite;
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 14%;
+  left: 52%;
+  width: 100px;
+  height: 153px;
+  background: 
+    linear-gradient(to right, #000 50%, transparent 50%) bottom repeat-x,
+    linear-gradient(to top, #000 50%, transparent 50%) left repeat-y;
+  background-size: 10px 2px, 2px 10px;
+  animation: 
+    bottom2 1.5s linear infinite,  
+    left2 1.5s linear infinite;
+}
+
+
+
+@keyframes topMove {
+  from {
+    background-position: 0 0, 100% 100%;  
+  }
+  to {
+    background-position: 100% 0, 100% 100%;  
+  }
+}
+
+@keyframes rightMove {
+  from {
+    background-position: 0 0, 100% 100%;  
+  }
+  to {
+    background-position: 0 0, 100% 0;  
+  }
+}
+@keyframes run-dash-top2 {
+  from {
+    background-position: -10px 0, 0 100%;  
+  }
+  to {
+    background-position: 0 0, 0 0;  
+  }
+}
+
+@keyframes run-dash-left2 {
+  from {
+    background-position: 0 0, 0 100%;  
+  }
+  to {
+    background-position: 0 0, 0 0;      
+  }
+}
+@keyframes bottom1 {
+  from {
+    background-position: 100% 100%, 100% 0;
+  }
+  to {
+    background-position: 0 100%, 100% 0;
+  }
+}
+
+@keyframes right1 {
+  from {
+    background-position: 100% 100%, 100% 0;
+  }
+  to {
+    background-position: 100% 100%, 100% 100%;
+  }
+}
+
+@keyframes bottom2 {
+  from {
+    background-position: 0 100%, 0 0;
+  }
+  to {
+    background-position: 100% 100%, 0 0;
+  }
+}
+
+@keyframes left2 {
+  from {
+    background-position: 0 100%, 0 0;
+  }
+  to {
+    background-position: 0 100%, 0 100%;
+  }
+}

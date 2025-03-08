@@ -2,6 +2,7 @@
 import './App.css'
 import Navbar from './Components/Navbar'
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import WhyHexanode from './pages/WhyHexanode';
 import Features from './pages/Features';
 import LandingPage from './pages/LandingPage';
@@ -16,28 +17,15 @@ function App() {
 
   return (
     <>
-     <div>
-      <Navbar />
-      <div>
-       <LandingPage />
-      </div>
-      <div>
+      <Navbar /> 
+      <LandingPage />   
       <WhyHexanode />
-      </div>    
-      <div>
       <Features />
-    </div>
-    <div>
-      <Platforms />
-    </div>
-    <div>
-      <Carousel />
-    </div>
-    <div>
-      <BrandRunner />
-    </div>
+      <Platforms /> 
+      <Carousel /> 
+      <BrandRunner />  
       <Footer />
-    </div>
+   
     </>
   )
 }
