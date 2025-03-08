@@ -246,6 +246,7 @@
 
 
 @keyframes topMove {
+  
   from {
     background-position: 0 0, 100% 100%;  
   }
